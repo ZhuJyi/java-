@@ -1,0 +1,10 @@
+create datebase java;//创建数据库
+use java;//使用
+create table user(name varchar(10),passwd varchar(10),mobile varchar(10),adress varchar(10));//创建用户： 用户名 密码 手机 地址
+create table shop(name varchar(10),passwd varchar(10),mobile varchar(10),adress varchar(10));//创建商家： 用户名 密码 手机 地址
+create table send(name varchar(10),passwd varchar(10),mobile varchar(10));//创建配送员： 用户名 密码 手机 地址
+create table guanli(name varchar(10),passwd varchar(10));//创建管理员： 用户名 密码
+insert into guanli(name,passwd)values(11111,11111);//管理员用户密码
+create table foods(name varchar(10),price int(10),kind varchar(10),belong varchar(10));//创建食物： 名字 价格 种类 所属商家
+create table dingdan(id int key auto_increment,name varchar(10),price int(10),totally int(10),user varchar(10),belong varchar(10),state varchar(10),send varchar(10));//创建订单： id 订单食物名字 价格 总价 下单用户 所属商家 订单状态 配送员
+create table pingjia(id int key auto_increment,name varchar(10),belong varchar(10),user varchar(10),good varchar(10),bad varchar(10),state varchar(10));//创建评价： 食物名字 所属商家 评价用户 好评 差评 是否评价
